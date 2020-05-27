@@ -13,9 +13,29 @@
 		4A57BE31247DCE7C000CB93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A57BE2F247DCE7C000CB93A /* Main.storyboard */; };
 		4A57BE33247DCF09000CB93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A57BE32247DCF09000CB93A /* Assets.xcassets */; };
 		4A57BE36247DCF09000CB93A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A57BE34247DCF09000CB93A /* LaunchScreen.storyboard */; };
+		4A57BE3D247DD2AC000CB93A /* Pods_AgoraVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E9A7FFEF8F70A8E7FD6E57 /* Pods_AgoraVideo.framework */; };
+		4A57BE40247DD2DD000CB93A /* Pods_AgoraVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E9A7FFEF8F70A8E7FD6E57 /* Pods_AgoraVideo.framework */; };
+		4A57BE41247DD2DD000CB93A /* Pods_AgoraVideo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06E9A7FFEF8F70A8E7FD6E57 /* Pods_AgoraVideo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A57BE44247DD6B6000CB93A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A57BE43247DD6B5000CB93A /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A57BE42247DD2DD000CB93A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4A57BE41247DD2DD000CB93A /* Pods_AgoraVideo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06E9A7FFEF8F70A8E7FD6E57 /* Pods_AgoraVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB40B3410DBDB1CF79772D8 /* Pods-AgoraVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVideo.debug.xcconfig"; path = "Target Support Files/Pods-AgoraVideo/Pods-AgoraVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		4A57BE26247DCE7B000CB93A /* AgoraVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A57BE29247DCE7B000CB93A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A57BE2B247DCE7B000CB93A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,8 @@
 		4A57BE32247DCF09000CB93A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A57BE35247DCF09000CB93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A57BE37247DCF09000CB93A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A57BE43247DD6B5000CB93A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D9900BE74C7A20471E581C2F /* Pods-AgoraVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraVideo.release.xcconfig"; path = "Target Support Files/Pods-AgoraVideo/Pods-AgoraVideo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A57BE44247DD6B6000CB93A /* CoreMedia.framework in Frameworks */,
+				4A57BE3D247DD2AC000CB93A /* Pods_AgoraVideo.framework in Frameworks */,
+				4A57BE40247DD2DD000CB93A /* Pods_AgoraVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +67,8 @@
 			children = (
 				4A57BE28247DCE7B000CB93A /* AgoraVideo */,
 				4A57BE27247DCE7B000CB93A /* Products */,
+				B9FEBB3FD8DB2AE3D1A8A1DC /* Pods */,
+				FBC52730CC7CEF76A5C5CACB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +94,24 @@
 			path = AgoraVideo;
 			sourceTree = "<group>";
 		};
+		B9FEBB3FD8DB2AE3D1A8A1DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DB40B3410DBDB1CF79772D8 /* Pods-AgoraVideo.debug.xcconfig */,
+				D9900BE74C7A20471E581C2F /* Pods-AgoraVideo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBC52730CC7CEF76A5C5CACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A57BE43247DD6B5000CB93A /* CoreMedia.framework */,
+				06E9A7FFEF8F70A8E7FD6E57 /* Pods_AgoraVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A57BE3A247DCF09000CB93A /* Build configuration list for PBXNativeTarget "AgoraVideo" */;
 			buildPhases = (
+				96ED2155325CD843E1BDB0EE /* [CP] Check Pods Manifest.lock */,
 				4A57BE22247DCE7B000CB93A /* Sources */,
 				4A57BE23247DCE7B000CB93A /* Frameworks */,
 				4A57BE24247DCE7B000CB93A /* Resources */,
+				4A57BE42247DD2DD000CB93A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +179,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96ED2155325CD843E1BDB0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A57BE22247DCE7B000CB93A /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		4A57BE3B247DCF09000CB93A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB40B3410DBDB1CF79772D8 /* Pods-AgoraVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		4A57BE3C247DCF09000CB93A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9900BE74C7A20471E581C2F /* Pods-AgoraVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
